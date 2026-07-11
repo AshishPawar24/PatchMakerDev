@@ -30,7 +30,9 @@ public class GroqClient {
         this.model = model;
     }
 
+
     public String getCompletion(String prompt) {
+
         GroqRequest request = new GroqRequest(
                 model,
                 List.of(new GroqMessage("user", prompt)),
